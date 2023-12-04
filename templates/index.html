@@ -2,19 +2,19 @@
 
 {% block body %}
 <h1>トップページ</h1>
-<div class="form"> 
+<div class="form">
     <form action="/create" method="POST">
-    <label for="title">Title</label>
-    <input type="text" name="title" />
-    <label for="details">Details</label>
-    <input type="text" name="details" />
-    <input type="submit" value="Create" />
+      <label for="title">Title</label>
+      <input type="text" name="title" />
+      <label for="details">Details</label>
+      <input type="text" name="details" />
+      <input type="submit" value="Create" />
     </form>
-</div> 
-{% for task in tasks %} 
- <h2>タイトル : {{ task.title }}</h2> 
- <p>詳細 : {{ task.details }}</p> 
- <a href="/delete/{{ task.id }}" role="button">Delete</a> 
+</div>
+{% for task in tasks %}
+    <h2>タイトル : {{ task.title }}</h2>
+    <p>詳細 : {{ task.details }}</p>
+    <a href="/delete/{{ task.id }}" role="button">Delete</a>
+    <a href="/update/{{ task.id }}" role="button">Update</a>
 {% endfor %}
 {% endblock %}
-
