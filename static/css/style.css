@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nova+Square&display=swap');
+
+:root{
+   --primary: #0d6efd;
+   --dark:#21252f;
+   --body:#888;
+}
+
+ body{
+   font-family: 'Noto Sans JP', sans-serif;
+   font-family: 'Nova Square', sans-serif;
+ }
+
+.navvar .nav-link{
+   color:#ffff !important;
+   font-size: 14px;
+   font-weight: 700;
+}
+
+h1 {
+    font-size:24px;
+    font-weight: bold;
+    color: #ff7800;
+}
+h2 {
+    font-size:24px;
+    font-weight: bold;
+    color: rgb(22, 240, 14);
+}
