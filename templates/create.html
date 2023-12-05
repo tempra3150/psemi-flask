@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2 style="padding-left: 10px;">Task Create</h2>
+    <form action="/create" method="POST">
+      <label for="title" style="padding-left: 10px;">Title:</label>
+      <input type="text" name="title" />
+      <label for="details" style="padding-left: 10px;">Detail:</label>
+      <input type="text" name="details" />
+      <input type="submit" value="Create" />
+    </form>
+
+{% endblock %}
