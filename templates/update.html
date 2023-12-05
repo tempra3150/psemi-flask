@@ -2,13 +2,12 @@
 
 {% block body %}
 
-<h2>編集</h2>
+<h2 style="padding-left: 10px;">Task Edit</h2>
 <form action="/update/{{ task.id }}" method="post">
-    <label for="title">タスク名:</label>
-    <input type="text" id="title" name="title" value="{{ task.title }}"><br><br>
-    <label for="details">詳細:</label>
-    <textarea id="details" name="details">{{ task.details }}</textarea><br><br>
-    <input type="submit" value="更新する">
+    <label for="title" style="padding-left: 10px;">Title:</label>
+    <input type="text" id="title" name="title" value="{{ task.title }}">
+    <label for="details" style="padding-left: 10px;">Detail:</label>
+    <input id="details" name="details" value="{{ task.details }}">
+    <input type="submit" value="Update">
 </form>
-
 {% endblock %}

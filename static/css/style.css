@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nova+Square&display=swap');
 
 :root{
-   --primary: #0d6efd;
-   --dark:#21252f;
-   --body:#888;
-}
+    --primary: #0d6efd;
+    --dark:#21252f;
+    --body:#888;
+    --box-shadow:0 8px 22px rgba(0,0,0,0.2);
+ }
 
  body{
    font-family: 'Noto Sans JP', sans-serif;
@@ -22,9 +23,19 @@ h1 {
     font-size:24px;
     font-weight: bold;
     color: #ff7800;
+    padding-left: 10px;
 }
 h2 {
     font-size:24px;
     font-weight: bold;
-    color: rgb(22, 240, 14);
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
 }
+
+h3{
+    font-size:20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+}
+
